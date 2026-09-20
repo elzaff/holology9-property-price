@@ -8,7 +8,7 @@ The main retraining entrypoint is [`solutions.py`](solutions.py). It retrains th
 
 **Public score: `313285.10705` MAE**
 
-[View the submission on Kaggle](https://www.kaggle.com/competitions/holomine-property-price-prediction-from-sales-desc-task-2/submissions)
+[View the submission on Kaggle](https://www.kaggle.com/competitions/holomine-property-price-prediction-from-sales-desc-task-2/leaderboard)
 
 ## Architecture
 
