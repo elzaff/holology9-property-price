@@ -2,7 +2,7 @@
 
 Run from this directory after placing ``data/train.csv`` and ``data/test.csv`` here:
 
-    modal run modal_v5_train.py
+    modal run solutions.py
 
 The script launches the three 5-fold OOF components used by v3, then two additional
 full-train DeBERTa seeds used by v4/v5. Final v5 prediction is:

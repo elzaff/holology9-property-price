@@ -2,7 +2,13 @@
 
 This repository contains the reproducible Modal training pipeline and the final Kaggle notebook for the **[Holomine] Property Price Prediction From Sales Desc Task 2** competition.
 
-The main retraining entrypoint is [`modal_v5_train.py`](modal_v5_train.py). It retrains the v3 components, adds the full-train seeds used by v4, and writes the v5 submission artifact.
+The main retraining entrypoint is [`solutions.py`](solutions.py). It retrains the v3 components, adds the full-train seeds used by v4, and writes the v5 submission artifact.
+
+## Public Leaderboard Result
+
+**Public score: `313285.10705` MAE**
+
+[View the submission on Kaggle](https://www.kaggle.com/competitions/holomine-property-price-prediction-from-sales-desc-task-2/submissions)
 
 ## Architecture
 
@@ -84,7 +90,7 @@ Authenticate once, then run from the repository root. On Windows, set UTF-8 outp
 ```powershell
 $env:PYTHONIOENCODING = "utf-8"
 modal token new
-modal run modal_v5_train.py
+modal run solutions.py
 ```
 
 For another local data directory:
@@ -92,14 +98,14 @@ For another local data directory:
 ```powershell
 $env:PYTHONIOENCODING = "utf-8"
 $env:HOLO_DATA_DIR = "C:\path\to\competition-folder"
-modal run modal_v5_train.py
+modal run solutions.py
 ```
 
 Optional arguments:
 
 ```powershell
-modal run modal_v5_train.py --dry-run
-modal run modal_v5_train.py --out outputs/submissionv5.csv --artifacts outputs/modal_v5_artifacts
+modal run solutions.py --dry-run
+modal run solutions.py --out outputs/submissionv5.csv --artifacts outputs/modal_v5_artifacts
 ```
 
 The dry run lists all 17 jobs without starting GPU training. A normal run writes:
